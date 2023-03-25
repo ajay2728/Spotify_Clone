@@ -23,11 +23,11 @@
     ]
     
     songElements.forEach((element , i) => {
-        
+      
         element.getElementsByTagName("img")[0].src = songs[i].image;
         element.getElementsByTagName("span")[0].innerText = songs[i].name;
-        element.getElementsByTagName("span")[2].innerText = "5:35";
-    });
+    })
+   
     
    
     audioElement.src = songs[songIndex].songSource;
@@ -71,6 +71,15 @@
     songElements.forEach((element)=>{
         let e =  element.getElementsByTagName("i")[0];
        e.addEventListener('click' , ()=>{
+
+            if(!(audioElement.paused) && songIndex == e.id){
+              audioElement.pause();
+              makeAllPlayButtons(songs.length);
+              gif.style.opacity = '0';
+              masterPlayButton.classList.remove('fa-circle-pause');
+              masterPlayButton.classList.add('fa-circle-play');
+              
+            }else{
             songIndex = e.id;
             e.classList.remove('fa-circle-play');
             e.classList.add('fa-circle-pause');
@@ -81,7 +90,7 @@
             gif.style.opacity = '1';
             masterPlayButton.classList.remove('fa-circle-play');
             masterPlayButton.classList.add('fa-circle-pause');
-           
+            }
            
         });
     })
