@@ -75,14 +75,14 @@ nav ul li{
     cursor: pointer;
 }
 
-.songLabel{
+.songlabel{
     position: absolute;
     left: 10%;
     bottom:15%;
 
 }
 
-.songLabel img{
+.songlabel img{
   width:50px;
   opacity: 0;
   transition: 0.8s;
@@ -124,8 +124,9 @@ nav ul li{
         background-color: brown;
     }
     .container{
-        width: 100%;
-        margin: 12px;
+        width: 90%;
+        margin: 10px auto;
+        height:74vh;
     }
 
     .song{
@@ -141,6 +142,14 @@ nav ul li{
 
     .songlabel img
     {
-        width: 30px;
+        width: 50px;
+        
+    }
+
+    nav {
+        width:100%;
+    }
+    .bottom{
+        width: 100%;
     }
 }
