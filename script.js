@@ -40,8 +40,6 @@
         masterPlayButton.classList.remove('fa-circle-play');
         masterPlayButton.classList.add('fa-circle-pause');
         gif.style.opacity = '1';
-
-        
        }else{
         audioElement.pause();
         masterPlayButton.classList.remove('fa-circle-pause');

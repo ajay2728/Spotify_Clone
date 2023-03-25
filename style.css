@@ -17,6 +17,8 @@ nav ul{
     list-style-type: none;
     align-items: center;
     display: flex;
+    text-align: center;
+ 
   
 
 }
@@ -47,6 +49,7 @@ nav ul li{
     margin: 16px auto;
     border-radius: 25px;
     background-image: url("Images/songbg.jpg");
+    background-attachment: fixed;
     padding: 10px;
 }
 
@@ -112,4 +115,21 @@ nav ul li{
 
 .timestamp{
     margin-right:20px;
+}
+
+/* Responsive*/
+
+@media only screen and (max-width : 550px) {
+    body{
+        background-color: brown;
+    }
+    .container{
+        width: 100%;
+    }
+
+    .song{
+        width: 90%;
+        margin: 20px auto;
+        
+    }
 }
