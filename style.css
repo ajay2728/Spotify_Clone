@@ -50,6 +50,7 @@ nav ul li{
     border-radius: 25px;
     background-image: url("Images/songbg.jpg");
     background-attachment: fixed;
+    background-repeat:no-repeat;
     padding: 10px;
 }
 
