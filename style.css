@@ -132,4 +132,18 @@ nav ul li{
         margin: 20px auto;
         
     }
+    @media only screen and (max-width : 550px) {
+    body{
+        background-color: brown;
+    }
+    .container{
+        width: 100%;
+    }
+
+    .song{
+        width: 90%;
+        margin: 20px auto;
+        
+    }
+}
 }
