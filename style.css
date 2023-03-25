@@ -43,14 +43,14 @@ nav ul li{
 .container{
     height: 72vh;
     width: 70%;
-    background-color: black;
     color: white;
     font-family: 'Varela Round';
     margin: 16px auto;
     border-radius: 25px;
     background-image: url("Images/songbg.jpg");
     background-attachment: fixed;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 10px;
 }
 
@@ -60,6 +60,7 @@ nav ul li{
     bottom: 0;
     height:100px;
     background-color: black;
+    background-repeat: no-repeat;
     color: white;
 }
 
@@ -69,7 +70,7 @@ nav ul li{
     width: 80vw;
     margin-top: 40px;
    transition:0ms;
-    cursor:pointer;
+   cursor: pointer;
 
 }
 
@@ -92,6 +93,7 @@ nav ul li{
 
 .songList{
     height: auto;
+    width: 100%;
 }
 
 .song{
@@ -114,9 +116,8 @@ nav ul li{
     border-radius: 50%;
 
 }
-
-.song i{
-    cursor:pointer;
+.song i {
+    cursor: pointer;
 }
 
 .timestamp{
